@@ -1,6 +1,6 @@
 {
   "name": "retry-library",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "description": "A library that uses an exponential backoff logic to cancel an API request if the response is delayed and retries the request a certain number of times.",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
@@ -21,7 +21,7 @@
     "retry"
   ],
   "author": "yeonssu",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yeonsuu21/Retry-module.git"
