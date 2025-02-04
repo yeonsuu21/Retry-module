@@ -1,0 +1,36 @@
+{
+  "name": "retry-library",
+  "version": "1.0.0",
+  "description": "API응답이 지연되면 API요청을 취소하고 일정 횟수만큼 재시도 요청을 수행하는 라이브러리입니다.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup.sh",
+    "compile": "rm -rf dist && mkdir dist && tsc"
+  },
+  "keywords": [
+    "typescript",
+    "retry"
+  ],
+  "author": "yeonssu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeonsuu21/Retry-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yeonsuu21/Retry-module/issues"
+  },
+  "homepage": "https://github.com/yeonsuu21/Retry-module#readme",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
