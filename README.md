@@ -5,10 +5,12 @@
 지수 백오프 로직을 이용하여 API응답이 지연되면 API요청을 취소하고 일정 횟수만큼 재시도 요청을 수행하는 라이브러리입니다.
 A library that uses an exponential backoff logic to cancel an API request if the response is delayed and retries the request a certain number of times.
 
----
-
 클라이언트가 지정된 시간이 지나도 서버로부터 응답을 받지 못하면 요청을 취소하며
 사용자가 지정한 횟수와 시간내에 backOff전략을 통해 점진적으로 요청들을 다시 보내 서버의 응답값을 받을 수 있게하는 역할을 함
+
+## npm install
+
+https://www.npmjs.com/package/retry-library
 
 ## Dependency
 
